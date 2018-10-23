@@ -42,7 +42,7 @@ exports.handler = function (event, context, callback) {
         bucket: '<Your OSS Bucket>',
       });
       return client.put('Object-' + new Date(),
-        new Buffer('Hello World! Sent from Link Edge using Node.js.'));
+        new Buffer('Hello World! Sent from Link IoT Edge using Node.js.'));
     })
     .then((result) => {
       console.log(result);

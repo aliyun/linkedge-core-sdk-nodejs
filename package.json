@@ -1,0 +1,36 @@
+{
+  "name": "linkedge-core-sdk-nodejs",
+  "version": "0.1.0",
+  "description": "Link IoT Edge core sdk for Node.js.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run test-unit",
+    "test-unit": "mocha --colors -t 30000 \"test/unit/**/*.test.js\"",
+    "cover-unit": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 30000 \"test/unit/**/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Link",
+    "IoT",
+    "Edge"
+  ],
+  "author": "Alibaba Group Holding Ltd.",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "sinon": "^7.0.0"
+  }
+}

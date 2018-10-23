@@ -1,6 +1,6 @@
-# Link Edge Core SDK for Node.js
+# Link IoT Edge Core SDK for Node.js
 
-The package allows developers to write functions on Function Compute in JavaScript, which running within Link Edge.
+The package allows developers to write functions on Function Compute in JavaScript, which running within Link IoT Edge.
 
 ## Installation
 To add this library to your function, you can copy this project to your function's `node_modules` directory. Althrough the step is not necessary, we recommand that you do so as it improves the development experience especially when developing with IDE.

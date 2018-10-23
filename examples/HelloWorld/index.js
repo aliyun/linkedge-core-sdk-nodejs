@@ -15,9 +15,9 @@
  */
 
 /*
- * Demonstrates publishing messages to a topic using LinkEdge Core SDK. The function sends
+ * Demonstrates publishing messages to a topic using Link IoT Edge Core SDK. The function sends
  * a hello world message to the topic '/hello/world' every 5 seconds As the function is
- * long-lived it will run immediately and forever when deployed to a Link Edge.
+ * long-lived it will run immediately and forever when deployed to a Link IoT Edge.
  */
 
 'use strict';
@@ -34,7 +34,7 @@ function publishCallback(err, data) {
 function publishHelloWorld() {
   const message = {
     topic: '/hello/world',
-    payload: 'Hello World! Sent from Link Edge using Node.js.',
+    payload: 'Hello World! Sent from Link IoT Edge using Node.js.',
   };
   iotData.publish(message, publishCallback);
 }
