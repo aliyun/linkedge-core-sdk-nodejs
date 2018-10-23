@@ -1,9 +1,31 @@
 # Link IoT Edge Core SDK for Node.js
 
-The package allows developers to write functions on Function Compute in JavaScript, which running within Link IoT Edge.
+The package allows developers to write functions on Function Compute using JavaScript, which running within Link IoT Edge.
 
 ## Installation
-To add this library to your function, you can copy this project to your function's `node_modules` directory. Althrough the step is not necessary, we recommand that you do so as it improves the development experience especially when developing with IDE.
+```
+npm install linkedge-core-sdk
+```
+
+or you can copy this project directly to your function's `node_modules` directory.
+
+Althrough the library is built into Link IoT Edge, we recommand that you install it locally as it improves the development experience, especially when developing with IDE.
+
+## Example
+Here is a examle demonstrates publishing messages to a topic.
+
+```js
+const leSdk = require('linkedge-core-sdk');
+
+const iotData = new leSdk.IoTData();
+const message = {
+  topic: '/hello/world',
+  payload: 'Hello World! Sent from Link IoT Edge using Node.js.',
+};
+iotData.publish(message, (err) => {
+  if (err) console.log(err);
+});
+```
 
 ## APIs
 * [IoTData#**publish()**](#publish)
